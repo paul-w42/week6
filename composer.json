@@ -1,0 +1,12 @@
+{
+  "name": "paulwood/328/week6",
+  "authors": [
+    {
+      "name": "Paul Woods",
+      "email": "woods.paul@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
