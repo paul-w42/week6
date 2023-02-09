@@ -27,7 +27,7 @@ $f3->route('GET /', function() {
     $view = new Template();
     echo $view->render('views/info.html');
 });
-
+/*
 $f3->route('GET|POST /personal', function($f3) {
 
     // example POST --> SESSION save and forward
@@ -78,6 +78,7 @@ $f3->route('GET|POST /experience', function($f3) {
     echo $view->render('views/experience.html');
 });
 
+
 $f3->route('GET|POST /mailing_list', function($f3) {
 
     // example POST --> SESSION save and forward
@@ -89,21 +90,6 @@ $f3->route('GET|POST /mailing_list', function($f3) {
         if ($valid) {
             $_SESSION['jobs'] = $_POST['jobs'];
             $_SESSION['verticals'] = $_POST['verticals'];
-            /*$_SESSION['js'] = $_POST['js'];
-            $_SESSION['php'] = $_POST['php'];
-            $_SESSION['java'] = $_POST['java'];
-            $_SESSION['python'] = $_POST['python'];
-            $_SESSION['html'] = $_POST['html'];
-            $_SESSION['css'] = $_POST['css'];
-            $_SESSION['reactJS'] = $_POST['reactJS'];
-            $_SESSION['nodeJS'] = $_POST['nodeJS'];
-            $_SESSION['saas'] = $_POST['saas'];
-            $_SESSION['healthTech'] = $_POST['healthTech'];
-            $_SESSION['agTech'] = $_POST['agTech'];
-            $_SESSION['hrTech'] = $_POST['hrTech'];
-            $_SESSION['industrialTech'] = $_POST['industrialTech'];
-            $_SESSION['cybersecurity'] = $_POST['cybersecurity'];*/
-            // redirect to summary page
             $f3->reroute('summary');
         }
 
@@ -140,7 +126,7 @@ $f3->route('GET /success', function() {
     $view = new Template();
     echo $view->render('views/success.html');
 });
-
+*/
 
 // Run Fat-Free
 $f3->run();                 // -> is the object operator, equiv to . in java
